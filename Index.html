@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="scripts.js"> -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+
+
+
+
+
+</head>
+
+
+<body>
+    <nav class="shadow-lg flex flex-wrap justify-between m-5 p-4 ">
+
+
+
+
+        <div class="flex flex-wrap gap-1 md:flex-nowrap md:gap-3">
+            <div class="size-20 ml-3">
+                <img class="rounded-full" src="/img/undraw_coding_joxb.png" alt="">
+            </div>
+            <div class="ml-2">
+                <p class="font-bold text-3xl">Md.Maruf Hasan</p>
+                <p class="text-sm">Development Studies</p>
+            </div>
+            <div class="ml-2 relative">
+                <button id="component"
+                    class="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-bold py-2 px-4 rounded shadow-lg">
+                    Component
+                </button>
+                <div id="option" class="absolute hidden bg-white rounded-md shadow-lg mt-2 w-48">
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Support</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Learning</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Ads</a>
+
+
+                </div>
+            </div>
+            <div class="ml-2">
+                <button
+                    class="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-bold py-2 px-4 rounded shadow-lg">
+                    Document
+                </button>
+            </div>
+            <div class="ml-2">
+                <button
+                    class="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-bold py-2 px-4 rounded shadow-lg">
+                    Template
+                </button>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="flex flex-wrap gap-2 mt-3 md:mt-0">
+            <div id="theme-toggle" class=" size-10 p-2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                  </svg>  
+            </div>
+            <div>
+                <input class="rounded-lg p-2" type="text" placeholder="Search">
+            </div>
+            <div>
+                <button
+                    class="bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white font-bold py-2 px-4 rounded">
+                    Sign in
+                </button>
+            </div>
+            <div>
+                <button
+                    class="bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white font-bold py-2 px-4 rounded">
+                    Pricing
+                </button>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </nav>
+
+    <main class="w-11/12 mx-auto">
+
+        <div>
+            <!-- About Host Section Start Here-->
+    <div  class=" py-3 sm:py-3 lg:py-8">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <!-- text - start -->
+          <div class="mb-5 md:mb-7">
+            <h2 class="mb-4 text-center text-3xl font-bold text-gray-800 md:mb-6">About The Host</h2>
+            <p class="mx-auto max-w-screen-md text-center font-semibold text-gray-600 md:text-lg">Expert who will be conducting this webinar</p>
+          </div>
+          <!-- text - end -->
+      
+          <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 p-5">
+            <!-- stat - start -->
+            <div class="flex flex-col items-center justify-center rounded-lg p-4 lg:p-8">
+              <img src="https://i.postimg.cc/Bbn48v1m/My-profile.png" alt="Host Avatar" class="h-56 w-56 sm:h-auto sm:w-auto mb-2 rounded-md">
+            </div>
+            <!-- stat - end -->
+      
+            <!-- stat - start -->
+            <div class="flex flex-col rounded-lg sm:p-8 p-4">
+              <div class="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">Md. Maruf Hasan</div>
+              <div class="text-sm font-semibold sm:text-base mb-6 mt-2">Development Studies </div>
+      
+              <p class="text-base font-serif text-gray-500 text-justify sm:leading-relaxed sm:mr-8 mb-8 mt-8">
+                Meet Maruf Hasan, an experienced web developer and tech enthusiast who is passionate about sharing his knowledge with aspiring developers. As the host of our upcoming webinar on Web Development, John will take you on an exciting journey into the world of web development.
+              </p>
+              <p class="hidden md:text-justify md:block text-base font-serif text-gray-500 leading-relaxed sm:mr-8 mb-12">
+                During the webinar, John will cover various topics, including front-end and back-end development, popular programming languages, essential tools and frameworks, best practices, and tips for building responsive and user-friendly websites. 
+              </p>
+      <!-- social - start -->
+              <div class="flex gap-4">
+                <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                  <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                </a>
+      
+                <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                  <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                  </svg>
+                </a>
+      
+                <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                  <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </a>
+      
+                <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                  <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+              <!-- social - end -->
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+    <!-- About Host Section Ends Here-->
+
+        </div>
+
+
+
+
+        <div class="md:flex items-center justify-center md:p-5  bg-gradient-to-r from-gray-400 to-blue-200 rounded-lg">
+            <div class="">
+                <p class=" md:text-5xl text-3xl  font-bold mb-3 text-center md:text-left">Md.Maruf Hasan</p>
+
+
+                <p class="mt-2 text-2xl md:text-5xl font-bold text-center md:text-left">
+                    <span class="text-blue-800">Real</span> world examples & <br> Project
+                </p>
+            </div>
+
+            <div class="">
+                <!-- <img class="size-48  rounded-full" src="https://i.postimg.cc/Bbn48v1m/My-profile.png" alt=""> -->
+            </div>
+        </div>
+
+        <div class="mt-5 md:mx-10 md:flex">
+            <div class="flex-1">
+                <p class="text-4xl font-bold">Master Tailwind CSS with Real-World Examples and Projects</p> <br>
+                <p>Welcome to Chapter 7 of our "Learn Tailwind CSS" tutorial series! In this chapter, we'll take our
+                    skills to the next level by creating a Tailwind CSS Project—an Event Registration Landing Page
+                    (Evento). We'll discuss how to set up an easy registration process, create call-to-action buttons,
+                    and create attention-grabbing sections that will get people's attention and get them to sign up for
+                    the event. <br><br>
+
+
+
+
+                    We've covered many concepts so far, and now it's time to combine them to make our landing page truly
+                    amazing. <br><br>
+
+
+                    By the end of this chapter, we’ll have a fully functional and visually appealing landing page that
+                    showcases our learning of Tailwind CSS for crafting effective user interfaces. <br><br>
+
+
+                    But that's not all! In the last section of this chapter, we'll enhance your creativity by presenting
+                    some exciting project ideas. You can create it using the knowledge and techniques we've covered
+                    throughout this tutorial series. These projects will allow you to apply what you've learned in
+                    real-world scenarios and expand your portfolio. <br>
+
+
+                    Are you ready to build a stunning Event Registration Landing Page? Let's get started! 💪🚀</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                <p class="text-4xl font-bold mt-5">Introduction</p>
+                <p>A visually appealing and effective event landing page is crucial in today's digital age for driving
+                    registrations and making the event successful. Whether you're planning a conference, an engaging
+                    webinar, or any other type of event, a well-crafted landing page can be the key to attracting
+                    attendees and leaving a lasting impression. <br><br>
+
+
+
+
+                    In this guide, We will guide you through every step of the process, using the knowledge and skills
+                    we have gained from the previous chapters of the Learning Tailwind CSS tutorial series. Our aim is
+                    to help you create a unique landing page that will make you stand out from the rest. This guide is
+                    suitable for learners of all levels of expertise in web development or design, including beginners
+                    and experts.</p> <br>
+
+
+
+
+                <p class="text-4xl font-bold mt-5">Why is an Event Landing Page Important?</p>
+                <p>An event landing page serves as the digital gateway to your event. It's the first point of contact
+                    for potential attendees, providing them with essential information, visuals, and a compelling call
+                    to action. A well-optimized landing page can drive conversions and encourage visitors to register
+                    for your event. It establishes credibility and increases the curiosity of the target audience.</p>
+                <br><br>
+                <p>The event landing page is a powerful marketing tool that drives event registrations and leaves a
+                    lasting impact on the audience. An appealing landing page can:</p> <br>
+                <p><span class="font-semibold ">Convey Essential Information:</span> The landing page acts as an
+                    informative hub, conveying vital event details, including date, time, venue, speakers, agenda, and
+                    registration process.</p> <br>
+                <p><span class="font-semibold">Build Expectation:</span> A visually appealing and well-organized landing
+                    page builds excitement for the event and ignites visitors to learn more and register.</p> <br><br>
+                <p><span class="font-semibold">Build Trust:</span> A well-crafted landing page establishes credibility,
+                    assuring potential attendees that the event is valuable and deserving of their time and attention.
+                </p> <br><br>
+
+
+
+
+                <p class="text-2xl font-bold">Creating an Event Landing Page</p> <br>
+                <p>In this detailed guide, we'll look at the most important parts of an Event Landing Page that is
+                    visually appealing and gets people to sign up for the event. We'll provide a step-by-step guide and
+                    practical tips to help you create a landing page that stands out and drives registrations. We will
+                    combine all our previous learning of the Learning Tailwind CSS tutorial series to make a stunning
+                    landing page.</p>
+
+
+
+
+            </div>
+            <div class="flex-1 relative">
+                <div class="w-full "></div>
+                <div class="w-full sticky top-0  absolute">
+                    <img class="w-full" src="https://i.postimg.cc/Fz0hk21C/Maruf.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo sunt suscipit accusamus non atque eum quidem fugiat ratione inventore? Nesciunt!</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <section class="m-5">
+            <p class="text-3xl font-semibold  mb-3 ">Related Articles:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+                <div class="w-full sm:w-72  mb-4 bg-white rounded-lg shadow-lg">
+                    <img class="rounded-t-lg w-full h-30 sm:h-40 object-cover" src="https://i.ibb.co/RzdXZB6/Card-image.jpg" alt="" />
+                    <div class="py-4 px-6">
+                      <h2 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-xl sm:text-2xl tracking-tight">Front-End Development</h2>
+                      <p class="hover:cursor-pointer py-2 text-gray-600 leading-5">HTML, CSS, JavaScript, and frameworks like React and Vue.js - Learn to craft stunning user interfaces and create responsive websites that leave a lasting impression.</p>
+                    </div>
+                </div> 
+                <div class="w-full sm:w-72  mb-4 bg-white rounded-lg shadow-lg">
+                    <img class="rounded-t-lg w-full h-48 sm:h-40 object-cover" src="https://i.ibb.co/RzdXZB6/Card-image.jpg" alt="" />
+                    <div class="py-4 px-6">
+                      <h2 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-xl sm:text-2xl tracking-tight">Front-End Development</h2>
+                      <p class="hover:cursor-pointer py-2 text-gray-600 leading-5">HTML, CSS, JavaScript, and frameworks like React and Vue.js - Learn to craft stunning user interfaces and create responsive websites that leave a lasting impression.</p>
+                    </div>
+                </div> 
+                <div class="w-full sm:w-72  mb-4 bg-white rounded-lg shadow-lg">
+                    <img class="rounded-t-lg w-full h-48 sm:h-40 object-cover" src="https://i.ibb.co/RzdXZB6/Card-image.jpg" alt="" />
+                    <div class="py-4 px-6">
+                      <h2 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-xl sm:text-2xl tracking-tight">Front-End Development</h2>
+                      <p class="hover:cursor-pointer py-2 text-gray-600 leading-5">HTML, CSS, JavaScript, and frameworks like React and Vue.js - Learn to craft stunning user interfaces and create responsive websites that leave a lasting impression.</p>
+                    </div>
+                </div> 
+                <div class="w-full sm:w-72  mb-4 bg-white rounded-lg shadow-lg">
+                    <img class="rounded-t-lg w-full h-48 sm:h-40 object-cover" src="https://i.ibb.co/RzdXZB6/Card-image.jpg" alt="" />
+                    <div class="py-4 px-6">
+                      <h2 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-xl sm:text-2xl tracking-tight">Front-End Development</h2>
+                      <p class="hover:cursor-pointer py-2 text-gray-600 leading-5">HTML, CSS, JavaScript, and frameworks like React and Vue.js - Learn to craft stunning user interfaces and create responsive websites that leave a lasting impression.</p>
+                    </div>
+                </div> 
+                <div class="w-full sm:w-72  mb-4 bg-white rounded-lg shadow-lg">
+                    <img class="rounded-t-lg w-full h-48 sm:h-40 object-cover" src="https://i.ibb.co/RzdXZB6/Card-image.jpg" alt="" />
+                    <div class="py-4 px-6">
+                      <h2 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-xl sm:text-2xl tracking-tight">Front-End Development</h2>
+                      <p class="hover:cursor-pointer py-2 text-gray-600 leading-5">HTML, CSS, JavaScript, and frameworks like React and Vue.js - Learn to craft stunning user interfaces and create responsive websites that leave a lasting impression.</p>
+                    </div>
+                </div> 
+                <div class="w-full sm:w-72  mb-4 bg-white rounded-lg shadow-lg">
+                    <img class="rounded-t-lg w-full h-48 sm:h-40 object-cover" src="https://i.ibb.co/RzdXZB6/Card-image.jpg" alt="" />
+                    <div class="py-4 px-6">
+                      <h2 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-xl sm:text-2xl tracking-tight">Front-End Development</h2>
+                      <p class="hover:cursor-pointer py-2 text-gray-600 leading-5">HTML, CSS, JavaScript, and frameworks like React and Vue.js - Learn to craft stunning user interfaces and create responsive websites that leave a lasting impression.</p>
+                    </div>
+                </div> 
+                <div class="w-full sm:w-72  mb-4 bg-white rounded-lg shadow-lg">
+                    <img class="rounded-t-lg w-full h-48 sm:h-40 object-cover" src="https://i.ibb.co/RzdXZB6/Card-image.jpg" alt="" />
+                    <div class="py-4 px-6">
+                      <h2 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-xl sm:text-2xl tracking-tight">Front-End Development</h2>
+                      <p class="hover:cursor-pointer py-2 text-gray-600 leading-5">HTML, CSS, JavaScript, and frameworks like React and Vue.js - Learn to craft stunning user interfaces and create responsive websites that leave a lasting impression.</p>
+                    </div>
+                </div> 
+                <div class="w-full sm:w-72  mb-4 bg-white rounded-lg shadow-lg">
+                    <img class="rounded-t-lg w-full h-48 sm:h-40 object-cover" src="https://i.ibb.co/RzdXZB6/Card-image.jpg" alt="" />
+                    <div class="py-4 px-6">
+                      <h2 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-xl sm:text-2xl tracking-tight">Front-End Development</h2>
+                      <p class="hover:cursor-pointer py-2 text-gray-600 leading-5">HTML, CSS, JavaScript, and frameworks like React and Vue.js - Learn to craft stunning user interfaces and create responsive websites that leave a lasting impression.</p>
+                    </div>
+                </div> 
+                
+            </div>
+        </section>
+
+        <div>
+
+            <section class="bg-gray-400 bg-[url('https://i.postimg.cc/Bbn48v1m/My-profile.png')] bg-center bg-no-repeat bg-blend-multiply mt-6  h-screen">
+                <div class="mx-auto max-w-screen-xl px-4 py-20 text-center lg:py-30">
+                  <h1 class="mb-10  text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-5xl">Unleashing the Power of Web Development</h1>
+                  <p class="mb-8 mt-10 text-lg font-normal text-gray-300 sm:px-16 lg:px-48 lg:text-xl">Join us for an exciting journey into the world of web development, where we believe in harnessing the boundless potential of innovation, technology, and capital.</p>
+                  <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0">
+                    <a href="#" class="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-3 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                      Book Your Spot Now
+                      <svg aria-hidden="true" class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                    <a href="#" class="inline-flex items-center justify-center rounded-lg border border-white px-5 py-3 text-center text-base font-medium text-white hover:bg-gray-100 hover:text-gray-900 focus:ring-4 focus:ring-gray-400"> Learn more </a>
+                  </div>
+                </div>
+              </section>
+
+        </div>
+
+        <div>
+            <!-- Agenda Section Start Here -->
+    <div  class="bg-black">
+        <div class="mt-16 text-center">
+            <h2 class=" text-2xl  md:text-4xl font-bold dark:text-white p-2">What You Will Learn</h2>
+            <p class="text-gray-500 text-lg mt- mb-5 dark:text-gray-400 ">Topics that will be covered in this webinar</p>
+        </div>
+        <!-- Card Component  -->
+        <div class="flex flex-wrap justify-center mx-auto py-8 px-4 md:mb-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="w-full sm:w-80  mb-4 bg-white rounded-lg shadow-lg">
+            <img class="rounded-t-lg w-full h-48 sm:h-64 object-cover" src="https://i.ibb.co/RzdXZB6/Card-image.jpg" alt="" />
+            <div class="py-4 px-6">
+              <h2 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-xl sm:text-2xl tracking-tight">Front-End Development</h2>
+              <p class="hover:cursor-pointer py-2 text-gray-600 leading-5">HTML, CSS, JavaScript, and frameworks like React and Vue.js - Learn to craft stunning user interfaces and create responsive websites that leave a lasting impression.</p>
+            </div>
+        </div> 
+
+        <!-- Card 2 -->
+        <div class="w-full sm:w-80  mb-4 bg-white rounded-lg shadow-lg">
+          <img class="rounded-t-lg w-full h-48 sm:h-64 object-cover" src="https://i.ibb.co/PWpPSD7/Card-image-1.jpg" alt="" />
+          <div class="py-4 px-6">
+            <h2 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-xl sm:text-2xl tracking-tight">Back-End Development</h2>
+            <p class="hover:cursor-pointer py-2 text-gray-600 leading-5">Node.js, Python, MongoDB, MySQL, Express.js, and Django - Discover the magic of server-side programming and build scalable web applications.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="w-full sm:w-80  mb-4 bg-white rounded-lg shadow-lg">
+          <img class="rounded-t-lg w-full h-48 sm:h-64 object-cover" src="https://i.ibb.co/SfqGZQW/Card-image-3.jpg" alt="" />
+          <div class="py-4 px-6">
+            <h2 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-xl sm:text-2xl tracking-tight">Becoming a Full-Stack Developer</h2>
+            <p class="hover:cursor-pointer py-2 text-gray-600 leading-5">Front-end to back-end, APIs, development tools, and optimization - Elevate your coding skills and become a versatile web development maestro.</p>
+          </div>
+        </div>
+        
+           </div>
+        </div>
+    </div>
+    <!-- Agenda Section Ends Here -->
+        </div>
+
+<div>
+    <!-- Bottom CTA Section Start Here  -->
+    <div class="bg-slate-100">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      
+          <section class="flex flex-col items-center border-t-2 p-3">
+            
+            <div class="flex max-w-xl flex-col items-center pb-0 pt-2 text-center sm:pb-16 lg:pb-16 lg:pt-32">
+              <p class="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">Revolutionary way to build the web</p>
+              <h1 class="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl">Join The Webinar</h1>
+              <p class="mb-8 leading-relaxed text-gray-700 md:mb-12 text-lg xl:text-2xl"><span class="bg-red-200 font-bold">890</span> users already registered. Hurry before we're filled.</p>
+              <div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
+                <a href="#register" class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">CLAIM YOUR SPOT NOW</a>
+              </div>
+              <p class="mb-8 mt-8 leading-relaxed text-gray-500 md:mb-12 xl:text-lg">Can't make it? Join anyway. We will send you the recording.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    <!-- Bottom CTA Section Ends Here -->
+</div>
+
+        <div>
+            <!-- Registration form  -->
+    <div  class="bg-white py-2 sm:py-4 lg:py-8  ">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8 mt-5 mb-8 ">
+          <h2 class="mb-4 text-center text-3xl font-bold text-gray-800 md:mb-8 lg:text-4xl">Join the Webinar</h2>
+      
+          <form class="mx-auto max-w-lg rounded-lg border bg-gray-200">
+            <div class="flex flex-col gap-4 p-4 md:p-8">
+              <div>
+              <label for="name" class="mb-2  text-sm sm:text-base block text-gray-700 font-medium">Your name</label>
+              <input type="text" id="name" name="name" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" required>
+            </div>
+      
+            <div>
+                <label for="email" class="mb-2  text-sm sm:text-base block text-gray-700 font-medium">Email Address</label>
+                <input name="email" class="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+              </div>
+      
+            <div>
+              <label for="how" class="block text-gray-700 font-medium">How did you find us?</label>
+              <select id="how" name="how" class="mt-2 p-2 border border-gray-400 rounded w-full focus:outline-none focus:ring focus:border-blue-500" required>
+                <option value="">Select an option</option>
+                <option value="search_engine">Search Engine</option>
+                <option value="social_media">Social Media</option>
+                <option value="word_of_mouth">Word of Mouth</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+      
+            <div class="flex items-center">
+              <input type="checkbox" id="agree" name="agree" class="mr-2">
+              <label for="agree" class="text-gray-600">By clicking sign up you agree to our <a href="#" class="text-blue-500 hover:underline">Terms</a> and read our <a href="#" class="text-blue-500 hover:underline">Privacy Policy</a>.</label>
+            </div>
+      
+            <button type="submit" class="bg-blue-500 text-white font-medium px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-500">Sign Up</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    <!-- Registration form Ends Here -->
+        </div>
+
+    </main>
+
+
+<!-- Footer Start Here  -->
+<footer class="bg-slate-950 md:pt-8 md:pb-8">
+
+    <!-- Support Section Start Here -->
+    <div class="py-6 sm:py-8 lg:py-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div class="flex flex-col items-center justify-between gap-4 rounded-lg bg-slate-100 p-4 sm:flex-row md:p-8">
+        <div>
+          <h2 class="text-xl font-bold text-indigo-500 md:text-2xl text-center md:text-left" >Any Question?</h2>
+          <p class="text-gray-600">Feel free to get in touch with us.</p>
+        </div>
+  
+        <a href="#" class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Contact Us</a>
+      </div>
+    </div>
+    </div>
+    <!-- Support Section Ends Here -->
+    <div class="pt-12 lg:pt-16">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-16">
+        <div class="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:gap-8">
+          <div class="col-span-full lg:col-span-2">
+            <!-- logo - start -->
+            <div class="mb-4 lg:-mt-2">
+              <a href="/" class="inline-flex items-center gap-2 text-xl font-bold text-gray-100 dark:text-white md:text-2xl">
+                <img src="https://i.ibb.co/CVFbsH1/oig.png" class="mr-1 h-14" alt="" />
+                Developer
+              </a>
+            </div>
+            <!-- logo - end -->
+  
+            <p class="mb-6 text-gray-400 sm:pr-8">Join us for an exciting journey into the world of web development and take your skills to the next level. </p>
+  
+            <!-- social - start -->
+            <div class="flex gap-4">
+              <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+  
+              <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                </svg>
+              </a>
+  
+              <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+  
+              <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+            <!-- social - end -->
+          </div>
+  
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-300">Support</div>
+  
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">About Us</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Contact Us</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Chat</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">FAQ</a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+  
+          <!-- nav - start -->
+          <div>
+            <div class="mb-4 font-bold uppercase tracking-widest text-gray-300">Legal</div>
+  
+            <nav class="flex flex-col gap-4">
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Terms of Service</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>
+              </div>
+  
+              <div>
+                <a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Cookie settings</a>
+              </div>
+            </nav>
+          </div>
+          <!-- nav - end -->
+        </div>
+  
+        <div class="border-t py-8 text-center text-sm text-gray-400">© 2025 - Present Evento. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+<!-- Footer Ends Here -->
+
+
+    <script src="scripts.js"></script>
+    <!-- <script>
+
+
+        const component = document.getElementById('component');
+        const option = document.getElementById('option');
+
+
+
+
+        // Toggle dropdown visibility on button click
+        component.addEventListener('click', () => {
+            option.classList.toggle('hidden');
+        });
+
+
+
+
+        // Hide dropdown menu if clicking outside
+        document.addEventListener('click', (e) => {
+            if (!component.contains(e.target) && !option.contains(e.target)) {
+                option.classList.add('hidden');
+            }
+        });
+    </script> -->
+</body>
+
+
+</html>
+
